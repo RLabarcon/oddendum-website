@@ -1,0 +1,41 @@
+video#bgvid {
+    position: fixed;
+      top: 50%;
+      left: 50%;
+    height: auto;
+      min-height: 100%;
+    width: auto;
+      min-width: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+
+}
+
+div#overlay {
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+
+.bigtext {
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  color: white;
+  height: 142px;
+  display: block;
+  text-align: center;
+  margin: auto;
+
+  font-style: italic;
+  font-size: 142px;
+}
