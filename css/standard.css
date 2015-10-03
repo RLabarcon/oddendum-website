@@ -25,12 +25,12 @@ div#overlay {
 
 .smalltext {
   position: absolute;
-    top: 142px;
+    top: 0px;
     left: 0;
     bottom: 0;
     right: 0;
   color: white;
-  height: 142px;
+  height: 18px;
   display: block;
   font-family: "Times New Roman", serif;
   text-align: center;
