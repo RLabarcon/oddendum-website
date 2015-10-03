@@ -25,24 +25,25 @@ div#overlay {
 
 .smalltext {
   position: absolute;
-    top: 0px;
+    top: 190px;
     left: 0;
     bottom: 0;
     right: 0;
   color: white;
-  height: 18px;
+  height: 33px;
   display: block;
   font-family: "Times New Roman", serif;
   text-align: center;
   margin: auto;
-
+  letter-spacing: 18px;
+  text-shadow: 1px 1px #000000;
   font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .bigtext {
   position: absolute;
-    top: 0;
+    top: -70;
     left: 0;
     bottom: 0;
     right: 0;
@@ -52,7 +53,7 @@ div#overlay {
   font-family: "Times New Roman", serif;
   text-align: center;
   margin: auto;
-
+  text-shadow: 1px 2px #353535;
   font-style: italic;
   font-size: 142px;
 }
