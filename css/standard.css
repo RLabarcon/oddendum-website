@@ -23,7 +23,7 @@ div#overlay {
   height: auto;
 }
 
-.smalltext {
+#smalltext {
   position: absolute;
     top: 190px;
     left: 0;
@@ -41,7 +41,7 @@ div#overlay {
   font-size: 20px;
 }
 
-.bigtext {
+#bigtext {
   position: absolute;
     top: -70px;
     left: 0;
