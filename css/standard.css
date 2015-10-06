@@ -37,15 +37,13 @@ div#overlay {
   margin: auto;
   letter-spacing: 18px;
   text-shadow: 1px 1px #000000;
-    -moz-text-shadow: 1px 1px #000000;
-    -webkit-text-shadow: 1px 1px #000000;
   font-style: italic;
   font-size: 20px;
 }
 
 .bigtext {
   position: absolute;
-    top: 0;
+    top: -40px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -56,8 +54,6 @@ div#overlay {
   text-align: center;
   margin: auto;
   text-shadow: 1px 2px #353535;
-    -moz-text-shadow: 1px 2px #353535;
-    -webkit-text-shadow: 1px 2px #353535;
   font-style: italic;
   font-size: 142px;
 }
