@@ -8,7 +8,7 @@
   <meta name="description" content="Find thought-provoking
     and interesting content from across the web in beautiful,
     free-to-read web magazine form.">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow NOODP">
 
   <!-- Style Brick -->
   <link href="css/standard.css" type="text/css" rel="stylesheet">
@@ -18,9 +18,95 @@
 
 <body>
 
-  <div id="overlay">
-    <img src="images/overlay.png" width="1920" height="1080" alt="Oddendum">
+<nav>
+  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+  <div class="menu">
+    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+    <ul>
+
+      <li>
+        <a href="#">Home</a>
+      </li>
+
+      <li>
+        <label for="featured">Featured</label>
+        <input type="checkbox" id="featured" name="featured" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="featured"><span>Toggle</span></label>
+          <ul>
+            <li>
+              <a href="#">Wanderers</a>
+            </li>
+            <li>
+              <a href="#">Down the Rabbit Hole: Audio 101</a>
+            </li>
+          </ul>
+        <div>
+      </li>
+
+      <li>
+        <label for="news">News & World</label>
+        <input type="checkbox" id="news" name="news" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="news"><span>Toggle</span></label>
+          <ul>
+            <li>
+              <a href="#">The Digital Divide</a>
+            </li>
+            <li>
+              <a href="#">A Visual History of the American Wage</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <label for="tech">Tech</label>
+        <input type="checkbox" id="tech" name="tech" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="tech"><span>Toggle</span></label>
+          <ul>
+            <li>
+              <a href="#">Data Break Podcast</a>
+            </li>
+            <li>
+              <a href="#">Steam Controller</a>
+            </li>
+            <li>
+              <a href="#">Quest for Minification: Part I</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li>
+      <label for="lifestyle">Lifestyle</label>
+      <input type="checkbox" id="lifestyle" name="lifestyle" class="menu-checkbox">
+      <div class="menu">
+        <label class="menu-toggle" for="lifestyle"><span>Toggle</span></label>
+        <ul>
+          <li>
+            <a href="#">Spotify Found 'Em First</a>
+          </li>
+          <li>
+            <a href="#">Minimalism</a>
+          </li>
+          <li>
+            <a href="#">Cast-iron Cooking</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+      <li>
+        <a href="#">Our Team</a>
+      </li>
+
+    </ul>
   </div>
+</nav>
+
+<main>
 
   <div class="container">
     <div id="bigtext">Enjoy the rain.</div>
@@ -34,6 +120,11 @@
     <video autoplay loop id="backgroundvideo">
       <source src="rain.webm" type="video/webm">
   </video>
-</div>
+  </div>
+
+</main>
+
+<footer>
+</footer>
 
 </body>
