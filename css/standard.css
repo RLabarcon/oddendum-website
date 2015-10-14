@@ -71,6 +71,7 @@ label:focus {
   position: absolute;
     top: 0;
     left: 0px;
+  z-index: 5;
   background: #fff;
   width: 260px;
   height: 100%;
