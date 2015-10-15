@@ -9,7 +9,7 @@ video#backgroundvideo {
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-
+    overflow: hidden;
 }
 
 div#overlay {
@@ -23,27 +23,9 @@ div#overlay {
   height: auto;
 }
 
-#smalltext {
-  position: absolute;
-    top: 190px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  color: white;
-  height: 33px;
-  display: block;
-  font-family: "Times New Roman", serif;
-  text-align: center;
-  margin: auto;
-  letter-spacing: 18px;
-  text-shadow: 1px 1px #000000;
-  font-style: italic;
-  font-size: 20px;
-}
-
 #bigtext {
   position: absolute;
-    top: -70px;
+    top: 20px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -58,7 +40,8 @@ div#overlay {
   font-size: 142px;
 }
 li {
-  list-style-type: none
+  list-style-type: none;
+  width: 260px;
 }
 label {
   cursor: pointer;
@@ -68,7 +51,7 @@ label:focus {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
     top: 0;
     left: 0px;
   z-index: 5;
@@ -77,9 +60,8 @@ label:focus {
   height: 100%;
   transform: translate3d(-260px, 0, 0);
   transition: transform 0.35s;
-  font-size: 18;
-  font-weight: bold;
   line-height: 50%;
+  box-shadow: 0px 3px 2px #888888;
 }
 
 .menu label.menu-toggle {
@@ -93,21 +75,37 @@ label:focus {
   text-indent: -9999px;
   background: url(http://i.imgur.com/jiuJfka.png) 50% 50%/200px 50px no-repeat;
 }
-.menu ul li > label {
-  background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
-}
+
 .menu ul li a, .menu ul li label {
   display: block;
-  margin-left: auto;
-  margin-right: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -60px;
+  margin-right: 20px;
   text-align: center;
+    height: 10vh;
+    width: 220px;
   padding: 20px 20px;
   line-height: 20px;
   text-decoration: none;
   color: #000;
 }
+
+.menu ul li a p {
+  display: block;
+    margin-top: 40px;
+    margin-bottom: auto;
+}
+
 .menu ul li a:hover, .menu ul li label:hover {
   color: #666;
+}
+
+.menu ul.menulist{
+  position: absolute;
+    top: 0;
+    left: 25px;
+  height: 100%;
 }
 
 /* hide inputs */
@@ -123,4 +121,44 @@ label:focus {
 /* fade in checked menu */
 .menu-checkbox:checked + .menu {
   transform: translate3d(0, 0, 0);
+}
+
+.belowthefold {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+    top: 80vh;
+    left: 0px;
+  background-color: #EEE
+}
+
+.belowthefold h5 {
+  position: relative;
+    top: -10px;
+}
+
+.belowthefold h1 {
+  position: relative;
+    top: -5px;
+}
+
+footer {
+  display: block;
+    width: 100%;
+  position: absolute;
+    bottom: -150px;
+    left: 0;
+  background-color: #eee;
+}
+
+footer p {
+  position: relative;
+  top: 4px;
+  text-align: center;
+  color: #ccc;
+  font-size: 7pt;
 }
