@@ -1,3 +1,9 @@
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+ }
+
 video#backgroundvideo {
     position: fixed;
       top: 50%;
@@ -11,6 +17,10 @@ video#backgroundvideo {
     -webkit-transform: translateX(-50%) translateY(-50%);
     overflow: hidden;
 }
+.vidspace {
+  height: 100vh;
+  width: auto;
+}
 
 div#overlay {
   position: fixed;
@@ -21,6 +31,7 @@ div#overlay {
 .container {
   width: 100%;
   height: auto;
+  min-height: 100%;
 }
 
 #bigtext {
@@ -56,17 +67,17 @@ label:focus {
     left: 0px;
   z-index: 5;
   background: #fff;
-  width: 260px;
   height: 100%;
-  transform: translate3d(-260px, 0, 0);
+  width: 260px;
+  transform: translate3d(-240px, 0, 0);
   transition: transform 0.35s;
   line-height: 50%;
-  box-shadow: 2px 2px 2px #000;
+  box-shadow: 0px 3px 2px #888888;
 }
 
 .menu label.menu-toggle {
   position: absolute;
-  right: -200px;
+  right: 0px;
   width: 200px;
   height: 50px;
   line-height: 0px;
@@ -77,7 +88,7 @@ label:focus {
 }
 
 .menu ul li a, .menu ul li label {
-  display: block;
+  display:block;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: -60px;
@@ -104,7 +115,7 @@ label:focus {
 .menu ul.menulist{
   position: absolute;
     top: 0;
-    left: 25px;
+    left: 23px;
   height: 100%;
 }
 
@@ -133,8 +144,7 @@ label:focus {
   position: absolute;
     top: 80vh;
     left: 0px;
-  background-color: #EEE;
-  box-shadow: 0px 3px 2px #000;
+  background-color: #EEE
 }
 
 .belowthefold h5 {
@@ -149,10 +159,10 @@ label:focus {
 
 footer {
   display: block;
+    height: 50px;
     width: 100%;
   position: absolute;
-    bottom: -150px;
-    left: 0;
+    bottom: 0px;
   background-color: #eee;
 }
 
@@ -162,4 +172,12 @@ footer p {
   text-align: center;
   color: #ccc;
   font-size: 7pt;
+}
+
+.article-body {
+  background-color: #eee;
+  width: auto;
+    max-width: 600px;
+  height: auto;
+  padding: 30px;
 }
