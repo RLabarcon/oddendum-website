@@ -1,0 +1,142 @@
+/* Foundational */
+body {
+  z-index: 0;
+  background-color: #152338;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+nav {
+  z-index: 999;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+}
+footer p {
+  position: relative;
+  top: 4px;
+  text-align: center;
+  color: #ccc;
+  font-size: 7pt;
+}
+
+.nav-box-left {
+  z-index: 999;
+  background-color: #152338;
+  position: fixed;
+    top: 0;
+    left: 0;
+  width: 300px;
+  height: 100%;
+  box-shadow: 0 0 1px 1px #eee;
+  transform: translate3d(-230px, 0, 0);
+  transition: transform 0.35s;
+}
+
+.nav-box-left:hover {
+  transform: translate3d(0, 0, 0);
+}
+
+.nav-box-right {
+  background-color: #152338;
+  position: fixed;
+    top: 0;
+    right: 0;
+  width: 300px;
+  height: 100%;
+  box-shadow: 0 0 0 2px #ddd;
+  transform: translate3d(230px, 0, 0);
+  transition: transform 0.35s;
+}
+
+
+/* Typographical */
+.menulink h6 {
+  color: inherit;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.nav-links {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-links li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.menulink:hover {
+  color: gold;
+}
+
+.nav-links ul li {
+  display: block;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style-type: none;
+}
+
+
+/* Article Styling */
+.article-wrap {
+  display:block;
+  position: relative;
+  left: 15vw;
+  width: 600px;
+  max-width: 100vw;
+  overflow: hidden;
+
+}
+
+.article-body {
+  display: block;
+  position: relative;
+  width: auto;
+  max-width: 100vw;
+  font-family: "Times New Roman";
+  color: #eee;
+  font-size: 18px;
+  line-height: 1.61em;
+}
+
+.article-art {
+  position: static;
+  height: 100vh;
+}
+
+.article-title-static {
+  position: relative;
+  top: 85vh;
+  font-family: "League Gothic";
+  color: #eee;
+  font-size: 36pt;
+}
+
+.article-title {
+  position: relative;
+  font-family: "League Gothic";
+  color: #eee;
+  font-size: 36pt;
+}
+
+.article-attr-static {
+  position: relative;
+  top: 85vh;
+  color: #eee;
+  font-style:italic;
+}
+
+.article-attr {
+  position: static;
+  color: #eee;
+  font-style:italic;
+}
