@@ -22,7 +22,11 @@ footer p {
   color: #ccc;
   font-size: 7pt;
 }
-
+@font-face {
+  font-family: 'League Gothic';
+  src: url('..fonts/league_gothic-webfont.woff2');
+}
+/* Navigation */
 .nav-box-left {
   z-index: 999;
   background-color: #152338;
@@ -116,14 +120,14 @@ footer p {
 .article-title-static {
   position: relative;
   top: 85vh;
-  font-family: "League Gothic";
+  font-family: 'Raleway';
   color: #eee;
   font-size: 36pt;
 }
 
 .article-title {
   position: relative;
-  font-family: "League Gothic";
+  font-family: 'Raleway';
   color: #eee;
   font-size: 36pt;
 }
