@@ -1,4 +1,7 @@
 /* Foundational */
+p {
+  font-family: "Times New Roman", serif;
+}
 body {
   z-index: 0;
   background-color: #eee;
