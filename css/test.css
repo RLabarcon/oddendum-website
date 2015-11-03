@@ -6,6 +6,11 @@ body {
   width: 100%;
   margin: auto;
 }
+.container {
+  width: auto;
+  padding: 0px 70px;
+}
+
 nav {
   z-index: 999;
 }
@@ -29,7 +34,7 @@ footer p {
 /* Navigation */
 .nav-box-left {
   z-index: 999;
-  background-color: #152338;
+  background-color: #002157;
   position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +50,7 @@ footer p {
 }
 
 .nav-box-right {
-  background-color: #152338;
+  background-color: #002157;
   position: fixed;
     top: 0;
     right: 0;
@@ -89,6 +94,110 @@ footer p {
   list-style-type: none;
 }
 
+/*Front Page 11/2/15*/
+
+.banner {
+  width: 100vw;
+  background-color: #002157;
+}
+
+.post .banner {
+  width: 100vw;
+  background-color: #002157;
+  left: -10vw;
+  position: relative;
+  z-index: -10;
+}
+
+.banner img {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  height:256px;
+  width:256px;
+  position: relative;
+  left: -80px;
+}
+
+.post {
+  position: relative;
+  left: 10vw;
+  width: 640px;
+  min-width: 200px;
+}
+.post h1 {
+  font-family: "Raleway";
+  font-size: 88px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.post h4 {
+  position: relative;
+  top:-30px;
+  text-align: left;
+  color: #444;
+  font-style: italic;
+
+}
+
+.post p {
+  font-size: 20pt;
+  line-height: 1.61em
+}
+
+.post i p {
+  font-size: 26pt;
+  color:#222;
+}
+
+.post h2 {
+  font-family: 'Raleway';
+  font-size: 48px;
+}
+
+/*Bio Carousel*/
+
+.taylors {
+  background-image: url("../images/taylor.png");
+}
+.ravenstorms {
+  background-image: url("../images/ravenstorm.png")
+}
+.jamess {
+  background-image: url("../images/james.png")
+}
+
+.taylors .textbox {
+  position: relative; 
+  top: 350px;
+}
+.ravenstorms .textbox {
+  position: relative; 
+  top: 410px;
+}
+.jamess .textbox {
+  position: relative; 
+  top: 390px;
+}
+
+.profile {
+  background-color: none;
+  width: 1500px;
+  height: 750px;
+}
+.textbox {
+  position: relative;
+  top:375px;
+  margin-left: auto;
+  margin-right: auto;
+  height:400px;
+  width:600px;
+}
+.profile p {
+  color:#fff;
+  font-size: 14px;
+}
 
 /* Article Styling */
 .article-wrap {
@@ -117,6 +226,44 @@ footer p {
   height: 100vh;
 }
 
+.cover {
+  text-align: center;
+}
+
+.cover h1 {
+  position: relative;
+  top: 150px;
+  font-size: 144px;
+}
+
+.cover h6 {
+  margin: 0 35px;
+  position: relative;
+  top: 60px;
+  font-family: 'Raleway';
+  font-size: 18px;
+}
+
+.cover-apology {
+  position: relative;
+  top:80px;
+}
+
+.footer-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:50px;
+  width: 300px;
+  color: #666;
+  position: absolute;
+  bottom: -100px;
+  line-height: 0em;
+}
+
+.gotcha { 
+  text-align: center;
+}
 .article-title-static {
   position: relative;
   top: 85vh;
