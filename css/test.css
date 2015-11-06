@@ -4,14 +4,14 @@ p {
 }
 body {
   z-index: 0;
-  background-color: #eee;
+  background-color: #ccc;
   height: 100%;
   width: 100%;
   margin: auto;
 }
 .container {
   width: auto;
-  padding: 0px 70px;
+  padding: 0px 0px;
 }
 
 nav {
@@ -35,33 +35,21 @@ footer p {
   src: url('..fonts/league_gothic-webfont.woff2');
 }
 /* Navigation */
-.nav-box-left {
-  z-index: 999;
-  background-color: #002157;
+.nav-box {
+  z-index: 9;
+  background-color: #001942;
   position: fixed;
-    top: 0;
-    left: 0;
-  width: 300px;
-  height: 100%;
-  transform: translate3d(-230px, 0, 0);
-  transition: transform 0.35s;
-}
-
-.nav-box-left:hover {
+    top: 20px;
+    left: 20px;
+  width: 250px;
+  height: 300px;
   transform: translate3d(0, 0, 0);
+  transition: transform 0.25s;
 }
 
-.nav-box-right {
-  background-color: #002157;
-  position: fixed;
-    top: 0;
-    right: 0;
-  width: 300px;
-  height: 100%;
-  transform: translate3d(230px, 0, 0);
-  transition: transform 0.35s;
+.nav-box:hover {
+  transform: translate3d(0, 250px, 0);
 }
-
 
 /* Typographical */
 .menulink h6 {
@@ -74,7 +62,7 @@ footer p {
 
 .nav-links {
   position: relative;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
 }
 
@@ -90,6 +78,7 @@ footer p {
 .nav-links ul li {
   display: block;
   position: relative;
+  line-height:1em;
   margin-top: auto;
   margin-bottom: auto;
   list-style-type: none;
@@ -98,14 +87,19 @@ footer p {
 /*Front Page 11/2/15*/
 
 .banner {
-  width: 100vw;
+  position: fixed;
+  left: 20px;
+  top:20px;
+  z-index: 10;
+  width: 250px;
+  height: 250px;
   background-color: #002157;
 }
 
 .post .banner {
   width: 100vw;
   background-color: #002157;
-  left: -10vw;
+  left: 10vw;
   position: relative;
   z-index: -10;
 }
@@ -114,45 +108,63 @@ footer p {
   display: block;
   margin-left: auto;
   margin-right:auto;
-  height:256px;
-  width:256px;
-  position: relative;
-  left: -80px;
+  height:250px;
+  width:250px;
+  position: fixed;
+  left: 20px;
+  top:20px;
+  z-index: 11;
 }
 
 .post {
+  color: #ddd;
   position: relative;
-  left: 10vw;
-  width: 700px;
+  top: -250px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left:100px;
+  padding-right:100px;
+  width: 800px;
   min-width: 200px;
+  background-color: #222
 }
 .post a {
   text-decoration: none;
   color: #111;
 }
-.post h1 {
-  font-family: "Raleway";
+.article-art h1 {
+  font-family: "Times New Roman";
   font-size: 88px;
-  text-transform: uppercase;
-  text-align: left;
+  text-transform: capitalize;
+  text-align: center;
+  color: #eee;
 }
 
-.post h4 {
+.article-art h4 {
   position: relative;
-  top:-30px;
-  text-align: left;
-  color: #444;
+  top: -60px;
+  text-align: center;
+  color: #ddd;
   font-style: italic;
 
 }
-
-.post h6 {
+.intro-text-box {
+  display: block;
   position: relative;
-  padding-left: 20px;
-  font-size: 36px;
-  height: 48px;
-  color:white;
-  background-color: black;
+  top: 45%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-text-box h6 {
+  text-align: center;
+  position: relative;
+  padding-left: -20px;
+  top:70px;
+  font-size: 18px;
+  height: 24px;
+  color: #ddd;
 }
 
 .post p {
@@ -162,7 +174,7 @@ footer p {
 
 .post i p {
   font-size: 26pt;
-  color:#222;
+  color:#fff;
 }
 
 .post h2 {
@@ -206,7 +218,7 @@ footer p {
 }
 .textbox {
   position: relative;
-  top:375px;
+  top:350px;
   margin-left: auto;
   margin-right: auto;
   height:400px;
@@ -220,19 +232,12 @@ footer p {
 /*Video Promo*/
 .video {
   position: relative;
-  top: 25px;
-  right: 80px;
   background: #666;
   display: block;
   width: 800px;
   height: 450px;
   margin-left: auto;
   margin-right: auto;
-}
-.video-background { 
-  background-color: #444;
-  width: 100vw;
-  height: 500px;
 }
 
 .video-background-text { 
@@ -246,8 +251,6 @@ footer p {
 }
 .video-background-text h1{
   position: relative;
-  top: 20px;
-  right: 80px;
   font-family: "Raleway", sans-serif;
   font-size: 48px;
   text-align: center;
@@ -276,7 +279,9 @@ footer p {
 }
 
 .article-art {
-  position: static;
+  background-image: url('../images/kurzgesagt.png');
+  position: relative;
+  top:-50;
   height: 100vh;
 }
 
