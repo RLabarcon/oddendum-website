@@ -279,10 +279,11 @@ footer p {
 }
 
 .article-art {
-  background-image: url('../images/kurzgesagt.png');
+  background-image: url('./images/kurzgesagt.PNG');
   position: relative;
+  background-repeat: none;
   top:-50;
-  height: 100vh;
+  height: 91vh;
 }
 
 .cover {
