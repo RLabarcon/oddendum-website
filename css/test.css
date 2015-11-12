@@ -373,6 +373,9 @@ float: right;
   background-image: url('../images/kurzgesagt.PNG');
 }
 
+.pc-mini-1 {
+  background-image: url('../images/pcbg.png');
+}
 .vr {
   background-image: url('../images/vr.png');
 }
