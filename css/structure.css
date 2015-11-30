@@ -1,0 +1,167 @@
+/* ---- Structural elements ---- */
+.container {
+  width: auto;
+  padding: 0px 0px;
+}
+
+.subsequent {
+  position: relative;
+  top: -275px;
+}
+
+/* ---- Box Sizes ---- */
+.half-width {
+	width: 50vw;
+}
+.quarter-width {
+	width: 25vw;
+}
+.full-width {
+	width: 100vw;
+}
+
+.article-link {
+  display: inline-block;
+  height: 65vh;
+  background-color: blue;
+}
+/* -- Author Box -- */
+.authorbox {
+  position: relative;
+  top: 9vh;
+  margin: 0 auto;
+  width: 225px;
+  height: 300px;
+  background-image: url('../images/grey3-bg.png');
+  box-shadow:1px 1px 0px #000;
+}
+
+
+
+/* -- Images -- */
+
+.authorbox img {
+  position: relative;
+  top:32px;
+  display: block;
+  margin: 0 auto;
+  width: 156px;
+  height: 156px;
+}
+
+.post img {
+  width:800px;
+  height:auto;
+  box-shadow: 1px 1px 0px #000;
+  margin-bottom: 1em;
+}
+
+/* -- Links -- */
+.nav-links li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+/* -- Navigation -- */
+.nav-box {
+  margin: 0 auto;
+  z-index: 9;
+  background-image: url('../images/grey3-bg.png');
+  position: fixed;
+  top:0px;
+  left:0;
+  width: 100vw;
+  height: 48px;
+  box-shadow: 1px 1px 0px #000;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s;
+}
+
+.nav-box:hover {
+  transform: translate3d(0, 0px, 0);
+}
+
+.nav-links {
+  position: relative;
+  top:20px;
+  display: block;
+  text-align: center;
+}
+
+.nav-links ul {
+  position: absolute;
+  top:0px;
+  right: 45px;
+}
+
+.nav-links ul li {
+  padding-left: 40px;
+  padding-right: 40px;
+  float: left;
+  display: inline;
+  position: relative;
+  line-height:1em;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+
+/* -- Post -- */
+	/* Background Images */
+.kurzgesagt {
+  background-image: url('../images/kurzgesagt.PNG');
+}
+
+.pc-mini-1 {
+  background-image: url('../images/pcbg.png');
+}
+	/* ----------------- */
+
+.article-art {
+  background-position: center;
+  position: relative;
+  background-repeat: none;
+  top:0px;
+  height: 100vh;
+}
+
+.post {
+  box-shadow: 1px 1px 0px #000;
+  color: #ddd;
+  position: relative;
+  top: -29vh;
+  padding-top: 35px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left:70px;
+  padding-right:70px;
+  width: 800px;
+  min-width: 800px;
+  background-image: url('../images/grey3-bg.png');
+}
+
+.intro-text-box {
+  display: block;
+  position: relative;
+  top: 24vh;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-- Video --*/
+.video {
+  position: relative;
+  background: #666;
+  display: block;
+  width: 800px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+	
+
+

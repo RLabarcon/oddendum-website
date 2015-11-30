@@ -1,0 +1,7 @@
+.article-art h1 {
+	position: absolute;
+	top: -60px;
+	left: 20px;
+	font-size: 333px;
+	line-height: 1em
+}
