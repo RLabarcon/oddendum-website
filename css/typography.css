@@ -1,0 +1,116 @@
+/* ---- Typography ---- */
+
+/* -- Fonts -- */
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url('fonts/nexa.woff2') type('woff2');
+}
+
+@font-face {
+  font-family: 'cocogoose';
+  src: url('fonts/cocogoose.woff2') type('woff2');
+}
+
+
+/* -- Menu -- */
+.menulink h2 {
+  color: inherit;
+  font-family: 'cocogoose', sans-serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.menulink:hover {
+  color: #383;
+}
+/* -- Headers -- */
+.intro-text-box h6 {
+  text-align: center;
+  position: relative;
+  padding-left: -20px;
+  top:70px;
+  font-size: 18px;
+  height: 24px;
+  color: #ddd;
+}
+
+
+/* --------- */
+
+
+
+.article-display h1 {
+  position: relative;
+  top:3px;
+  font-family: 'Nexa';
+  font-size: 4.8em;
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  color: #eee;
+}
+
+.article-display h4 {
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+}
+
+.article-art .authorbox h4 {
+  margin-top: 40px;
+  font-family: 'Nexa';
+  line-height: .85em;
+  font-size: 24px;
+  font-style: normal;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+.article-art .authorbox p {
+  display: block;
+  margin: 0 auto;
+  font-style: italic;
+  color: #ccc;
+  margin-top: 25px;
+  font-size: 12px;
+  text-align: center;
+  max-width: 155px;
+}
+
+/* -- Posts --*/
+.post a {
+  text-decoration: none;
+  color: #111;
+}
+
+.post b {
+  text-align: center;
+  float: right;
+}
+.post i p {
+  font-size: 26pt;
+  color:#fff;
+}
+.post h2 {
+  font-family: 'Raleway';
+  font-size: 48px;
+}
+
+.post p {
+  font-size: 2.4em;
+  line-height: 1.56em;
+  margin-bottom: 1em;
+}
+
+/* -- Footer --*/
+
+footer p {
+  position: relative;
+  top: 4px;
+  text-align: center;
+  color: #ccc;
+  font-size: 7pt;
+}
