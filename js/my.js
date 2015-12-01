@@ -3,10 +3,10 @@ $(document).ready(function() {
 	var $window = $(window);
 
 	function boxAdjust() {
-		if (850 < $window.width() < 1280) {
+		if (1080 < $window.width() < 1280) {
 			$('.article-link').removeClass('full-width').removeClass('third-width').addClass('half-width');
 		}
-		if ($window.width() < 850) {
+		if ($window.width() < 1080) {
 			$('.article-link').removeClass('half-width').removeClass('third-width').addClass('full-width');
 		}
 		if ($window.width() > 1560) {
