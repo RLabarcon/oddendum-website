@@ -30,7 +30,7 @@
   position: relative;
   padding-left: -20px;
   top:70px;
-  font-size: 18px;
+  font-size: 1.8em;
   height: 24px;
   color: #ccc;
 }
@@ -52,7 +52,7 @@
 }
 
 .article-display h4 {
-  font-size: 16px;
+  font-size: 1.6em;
   position: relative;
   text-align: center;
   color: #fff;
@@ -63,7 +63,7 @@
   margin-top: 40px;
   font-family: 'Nexa';
   line-height: .85em;
-  font-size: 24px;
+  font-size: 2.4em;
   font-style: normal;
   text-shadow: none;
   text-transform: uppercase;
@@ -75,7 +75,7 @@
   font-style: italic;
   color: #ccc;
   margin-top: 25px;
-  font-size: 12px;
+  font-size: 1.2em;
   text-align: center;
   max-width: 155px;
 }
@@ -91,7 +91,7 @@
   float: right;
 }
 .post i p {
-  font-size: 26pt;
+  font-size: 2.6em;
   color:#fff;
 }
 .post h2 {
