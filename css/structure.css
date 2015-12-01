@@ -1,4 +1,5 @@
 /* ---- Structural elements ---- */
+
 .container {
   width: auto;
   padding: 0px 0px;
@@ -18,17 +19,17 @@
 .half-width {
 	width: 50%;
 	height: 50vh;
-	background-color: blue;
+	background-color: #545;
 }
 .third-width {
 	width: 33.33%;
 	height: 70vh;
-	background-color: red;
+	background-color: #455;
 }
 .full-width {
 	width: 100%;
 	height: 60vh;
-	background-color: green;
+	background-color: #554;
 }
 
 .article-link {
@@ -175,6 +176,10 @@
   height: 100vh;
 }
 
+.article-stack {
+  height:auto;
+  display: block;
+}
 /* Overlays */
 .overlay {
   z-index: 0;
