@@ -1,5 +1,9 @@
 $(document).ready(function() {
 	
+	$('.article-display').hover(function() {
+		$('.article-display overlay').css('opacity', '0.3');
+	});
+
 	var $window = $(window);
 
 	function boxAdjust() {

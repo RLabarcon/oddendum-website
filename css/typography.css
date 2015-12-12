@@ -51,6 +51,10 @@
   color: #eee;
 }
 
+.article-display h1:hover .overlay:hover{
+  opacity: 0.3;
+}
+
 .article-display h4 {
   font-size: 1.6em;
   position: relative;
