@@ -16,14 +16,13 @@
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden;
 }
 .text-holder {
   background-color: #444;
   height: 100vh;
   width: 440px;
   position: absolute;
-  top: 0px;
+  top: 40px;
   left: -72px;
 }
 .text-holder h1 {
