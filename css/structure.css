@@ -1,6 +1,7 @@
 /* ---- Structural elements ---- */
 
 .container {
+  position: absolute;
   width: auto;
   padding: 0px 0px;
   overflow: hidden;
@@ -11,17 +12,61 @@
   top: -275px;
 }
 
+.wrapper {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+.text-holder {
+  background-color: #444;
+  height: 100vh;
+  width: 440px;
+  position: absolute;
+  top: -412px;
+  left: -72px;
+}
+.text-holder h1 {
+  font-size: 16em;
+  position: relative;
+  top:18px;
+}
+.text-holder h2 {
+  position: relative;
+  top:3px;
+  font-family: 'Nexa';
+  font-size: 4.6em;
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  color: #eee;
+}
+.text-holder h3 {
+  line-height: 1.2em;
+  color:#666;
+  position: relative;
+  left: 30px;
+  top:30px;
+  font-size: 2.0em;
+  text-align: left;
+  font-family: 'nexa';
+  text-transform: uppercase;
+}
+.text-holder h4 {
+  position: relative;
+  top:20px;
+}
+
 /* ---- Box Sizes ---- */
 .full {
   width: 100%;
-  height: 50vw;
-  max-height: 65vw;
+  height: 100vh;
+  max-height: 120vw;
 }
 
 .half-width {
 	width: 50%;
-	height: 50vh;
-  max-height: 55vw;
+	height: 70vh;
 	background-color: #545;
 }
 .third-width {
@@ -29,6 +74,14 @@
 	height: 70vh;
   max-height: 75vw;
 	background-color: #455;
+}
+.two-third-width {
+  position: relative;
+  margin: 0 auto;
+  width: 66.66%;
+  height: 70vh;
+  max-height: 66vw;
+  background-color: #455;
 }
 .full-width {
 	width: 100%;
@@ -60,16 +113,17 @@
 .logo {
   display: block;
   position: relative;
+  top: -8px;
   z-index: 10;
-  width:100px;
+  width: 100px;
   height: 100px;
   background-image: url('../images/logo.png');
-  margin-left: 48px;
+  margin-left: 24px;
 }
 
 .authorbox img {
   position: relative;
-  top:32px;
+  top:36px;
   display: block;
   margin: 0 auto;
   width: 156px;
@@ -93,12 +147,12 @@
 .nav-box {
   margin: 0 auto;
   z-index: 9;
-  background-color: #333;
+  background-color: #00040f;
   position: fixed;
   top:0px;
   left:0;
   width: 100vw;
-  height: 100px;
+  height: 85px;
   transform: translate3d(0, 0, 0);
   transition: transform 0.25s;
 }
@@ -109,7 +163,7 @@
 
 .nav-links {
   position: relative;
-  top:20px;
+  top:12px;
   display: block;
   text-align: center;
 }
@@ -143,7 +197,11 @@
 .pc-mini-1 {
   background-image: url('../images/pcbg.png');
 }
+
+.new-year{
+  background-image: url('../images/maxresdefault.jpg');
 	/* ----------------- */
+}
 
 
 /* Above the Fold*/
@@ -151,6 +209,36 @@
   height: 80vh;
 }
 
+.announcement {
+  position: relative;
+  top: 0;
+  color: black;
+  display: block;
+  margin: 0 auto;
+  width: 650px;
+  height: auto;
+}
+.announcement h1 {
+  font-size: 7.2em;
+  color:black;
+}
+.announcement h4 {
+  color:black;
+}
+.announcement p {
+  font-size: 2.4em;
+  line-height: 1.7em;
+  position: relative;
+  text-align: left;
+  color: #222;
+}
+.announcement img {
+  position: relative;
+  left: 200px;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+}
 .atf .article-display {
   height: auto;
   margin:72px;
@@ -172,11 +260,8 @@
   transform:translateY(-50%);
   background-repeat: none;
   background-position: center;
-  opacity: 0.8;
-}
-
-.article-display:hover, .overlay:hover .overlay {
   opacity: 1;
+  padding: 10px;
 }
 .article-art {
   position: relative;

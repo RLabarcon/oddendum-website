@@ -11,7 +11,13 @@
   src: url('fonts/cocogoose.woff2') type('woff2');
 }
 
-
+.mega h1 {
+  font-size: 9.2em;
+}
+.mega {
+  position: relative;
+  top: 20px;
+}
 /* -- Menu -- */
 .menulink h2 {
   color: inherit;
@@ -51,16 +57,20 @@
   color: #eee;
 }
 
-.article-display h1:hover .overlay:hover{
-  opacity: 0.3;
-}
-
 .article-display h4 {
   font-size: 1.6em;
   position: relative;
   text-align: center;
   color: #fff;
   font-style: italic;
+}
+
+
+.article-display p {
+  font-size: 2.4em;
+  position: relative;
+  text-align: left;
+  color: #222;
 }
 
 .article-art .authorbox h4 {
