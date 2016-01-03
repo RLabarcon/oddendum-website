@@ -20,10 +20,12 @@
 }
 .text-holder {
   background-color: #444;
-  height: 100vh;
+  border-radius: 2px;
+  color:#666;
+  height: 980px;
   width: 440px;
   position: absolute;
-  top: -412px;
+  top: -416px;
   left: -72px;
 }
 .text-holder h1 {
@@ -43,7 +45,6 @@
 }
 .text-holder h3 {
   line-height: 1.2em;
-  color:#666;
   position: relative;
   left: 30px;
   top:30px;
@@ -51,6 +52,7 @@
   text-align: left;
   font-family: 'nexa';
   text-transform: uppercase;
+  opacity: 0.8;
 }
 .text-holder h4 {
   position: relative;
@@ -277,9 +279,11 @@
 .overlay {
   z-index: 0;
   position: relative;
+  top: 6px;
+  left: 400px;
   height: 100%;
   width: 100%;
-  opacity: 0.6;
+  opacity: 1;
 }
 .blue {
   background-color: #33a;
@@ -293,10 +297,27 @@
   background-color: #3a3;
 }
 
-.red {
-  background-color: #a33;
+.james {
+  background-color: #7FB2F0;
 }
 
+/* 2016 */
+.senn {
+  background-image: url("../images/senn.jpg");
+  background-repeat: no-repeat;
+}
+
+.display-text {
+  position: relative;
+  float: right;
+  right: 400px;
+  top: 36px;
+  width: 440px;
+  font-size: 2.4em;
+  border-radius: 2px;
+  padding: 36px;
+  color: #dedede;
+}
 
 
 .post {
