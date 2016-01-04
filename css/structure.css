@@ -13,9 +13,8 @@
 }
 
 .wrapper {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 auto 0 420px;
+  width: 1480px;
   overflow: hidden;
 }
 .text-holder {
@@ -24,12 +23,16 @@
   color:#666;
   height: 980px;
   width: 440px;
-  position: absolute;
-  top: -416px;
-  left: -72px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index:10;
 }
 .text-holder h1 {
+  color: white;
   font-size: 16em;
+  font-family: 'Nexa';
+  text-align: center;
   position: relative;
   top:18px;
 }
@@ -57,11 +60,18 @@
 .text-holder h4 {
   position: relative;
   top:20px;
+  font-size: 1.6em;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
 }
 
 /* ---- Box Sizes ---- */
 .full {
-  width: 100%;
+  position: relative;
+  left:-40px;
+  width: 1520px;
   height: 100vh;
   max-height: 120vw;
 }
@@ -190,22 +200,6 @@
 }
 
 
-/* -- Post -- */
-	/* Background Images */
-.kurzgesagt {
-  background-image: url('../images/kurzgesagt.PNG');
-}
-
-.pc-mini-1 {
-  background-image: url('../images/pcbg.png');
-}
-
-.new-year{
-  background-image: url('../images/maxresdefault.jpg');
-	/* ----------------- */
-}
-
-
 /* Above the Fold*/
 .atf {
   height: 80vh;
@@ -280,7 +274,7 @@
   z-index: 0;
   position: relative;
   top: 6px;
-  left: 400px;
+  left: 0px;
   height: 100%;
   width: 100%;
   opacity: 1;
@@ -293,8 +287,8 @@
   background-color: #333;
 }
 
-.green {
-  background-color: #3a3;
+.max {
+  background-color: #8f3232;
 }
 
 .james {
@@ -307,10 +301,15 @@
   background-repeat: no-repeat;
 }
 
+.konami {
+  background-image: url("../images/konami.jpg");
+  background-repeat: no-repeat;
+}
+
 .display-text {
   position: relative;
   float: right;
-  right: 400px;
+  right: 44px;
   top: 36px;
   width: 440px;
   font-size: 2.4em;
